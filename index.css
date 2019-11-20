@@ -36,3 +36,23 @@ header {
   text-align: center;
   grid-row-gap: 2em;
 }
+
+.fromOurRestaurant {
+  grid-column:1/5;
+  text-align: center;
+}
+
+.contentFromOurRestaurant {
+  grid-column:1/5;
+  font-size: 20%;
+
+}
+
+p {
+  font-size: 20pt;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
