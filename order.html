@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="order.css" />
+    <title>Vegafutár</title>
+  </head>
+  <body>
+    <h1>Rendelés</h1>
+    <form>
+      <div>
+        <h2>Ezt kérem:</h2>
+        <label for="mushroomStuffedCabages">Gombával töltött káposzta</label>
+        <input
+          type="checkbox"
+          name="chooseMeal"
+          id="mushroomStuffedCabages"
+          value="yes"
+        />
+        <input
+          type="number"
+          max="20"
+          id="mushroomStuffedCabagesNumber"
+          name="mushroomStuffedCabagesNumber"
+        />
+        <label for="mushroomStuffedCabagesNumber">db</label>
+        <br /> <br />
+        <label for="milletStuffedCourgette"
+          >Kölessel és lencsével töltött cukkini</label
+        >
+        <input
+          type="checkbox"
+          name="chooseMeal"
+          id="milletStuffedCourgette"
+          value="yes"
+        />
+        <input
+          type="number"
+          max="20"
+          id="milletStuffedCourgetteNumber"
+          name="milletStuffedCourgetteNumber"
+        />
+        <label for="milletStuffedCourgetteNumber">db</label>
+        <br /> <br />
+        <label for="milletBalls">Paradicsomos kölesgombóc</label>
+        <input type="checkbox" name="chooseMeal" id="milletBalls" value="yes" />
+        <input
+          type="number"
+          max="20"
+          id="milletBallsNumber"
+          name="milletBallsNumber"
+        />
+        <label for="milletBallsNumber">db</label>
+        <br /> <br />
+        <label for="cauliflowerSteak"
+          >Vegetáriánus „vadas” karfiol steakkel és zsemlegombóccal</label
+        >
+        <input
+          type="checkbox"
+          name="chooseMeal"
+          id="cauliflowerSteak"
+          value="yes"
+        />
+        <input
+          type="number"
+          max="20"
+          id="cauliflowerSteakNumber"
+          name="cauliflowerSteakNumber"
+        />
+        <label for="cauliflowerSteakNumber">db</label>
+        <br /> <br />
+        <label for="enchillada">Zöldséges enchillada</label>
+        <input type="checkbox" name="chooseMeal" id="enchillada" value="yes" />
+        <input
+          type="number"
+          max="20"
+          id="enchilladaNumber"
+          name="enchilladaNumber"
+        />
+        <label for="enchilladaNumber">db</label>
+      </div>
+      <br />
+      <div>
+        <h2>Megrendelői adatok:</h2>
+        <label for="lastName">Vezetéknév:</label>
+        <input id="lastName" type="text" name="lastName" maxlength="30" />
+      </div>
+      <br />
+      <div>
+        <label for="firstName">Keresztnév:</label>
+        <input id="firstName" type="text" name="firstName" maxlength="20" />
+      </div>
+      <br />
+      <div>
+        <!-- csak számot lehessen -->
+        <label for="phoneNumber">Telefonszám:</label>
+        <input id="phoneNumber" type="text" name="phoneNumber" />
+      </div>
+      <br />
+      <div>
+        <label for="email">E-mail:</label>
+        <input id="email" type="text" name="email" maxlength="30" />
+      </div>
+      <br />
+      <div>
+        <span>Cím:</span>
+        <!-- csak számot lehessen -->
+        <input
+          id="postCode"
+          type="text"
+          name="postCode"
+          minlength="4"
+          maxlength="4"
+          placeholder="Irányítószám"
+        />
+        <input
+          id="city"
+          type="text"
+          name="city"
+          maxlength="30"
+          placeholder="Város"
+        />
+        <br />
+        <br />
+        <input
+          id="address"
+          type="text"
+          name="address"
+          maxlength="30"
+          placeholder="Utca, házszám"
+        />
+        <input
+          id="bell"
+          type="text"
+          name="bell"
+          maxlength="3"
+          placeholder="Csengő"
+        />
+      </div>
+      <br />
+      <div>
+        <span>Fizetési mód:</span>
+        <input type="radio" name="paymentMethod" id="cash" />
+        <label for="cash">Készpénz</label>
+        <input type="radio" name="paymentMethod" id="card" />
+        <label for="card">Kártya</label>
+        <input type="radio" name="paymentMethod" id="voucher" />
+        <label for="vousher">Utalvány</label>
+      </div>
+      <br />
+      <div>
+        <span>Számlát kér:</span>
+        <input type="radio" name="needBill" id="needBillYes" value="yes" />
+        <label for="cash">Igen</label>
+        <input type="radio" name="needBill" id="needBillNo" value="no" />
+        <label for="card">Nem</label>
+      </div>
+      <br />
+      <div>
+        <span>Egyéb megjegyzés:</span>
+        <br />
+        <textarea id="other" name="other"></textarea>
+        <!-- kevesebbet lehessen írni -->
+      </div>
+      <br />
+      <input type="submit" value="Megrendelem" />
+    </form>
+  </body>
+</html>
