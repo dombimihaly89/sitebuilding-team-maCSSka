@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vegafutár</title>
+  </head>
+  <body>
+    <h1>Rendelés</h1>
+    <div>
+      <label for="lastName">Vezetéknév:</label>
+      <input id="lastName" type="text" name="lastName" maxlength="30" />
+    </div>
+    <div>
+      <label for="firstName">Keresztnév:</label>
+      <input id="firstName" type="text" name="firstName" maxlength="20" />
+    </div>
+    <div> <!-- csak számot lehessen -->
+        <label for="phoneNumber">Telefonszám:</label>
+        <input id="phoneNumber" type="text" name="phoneNumber"/>
+      </div>
+      <div>
+          <label for="email">E-mail:</label>
+          <input id="email" type="text" name="email" maxlength="30" />
+      </div>
+      <div>
+          <span>Cím:</span> <!-- csak számot lehessen -->
+          <input id="postCode" type="text" name="postCode" minlength="4" maxlength="4" placeholder="Irányítószám"/>
+          <input id="city" type="text" name="city" maxlength="30" placeholder="Város"/>
+          <br/>
+          <input id="address" type="text" name="address" maxlength="30" placeholder="Utca, házszám"/>
+          <input id="bell" type="text" name="bell" maxlength="3" placeholder="Csengő"/>
+      </div>
+    <div>
+        <span>Fizetési mód:</span>
+        <input type="radio" name="paymentMethod" id="cash">
+        <label for="cash">Készpénz</label>
+        <input type="radio" name="paymentMethod" id="card">
+        <label for="card">Kártya</label>
+        <input type="radio" name="paymentMethod" id="voucher">
+        <label for="vousher">Utalvány</label>
+      </div>
+      <div>
+          <span>Számlát kér:</span>
+          <input type="radio" name="needBill" id="needBillYes" value="yes">
+          <label for="cash">Igen</label>
+          <input type="radio" name="needBill" id="needBillNo" value="no">
+          <label for="card">Nem</label>
+        </div>
+        <div>
+            <span>Egyéb megjegyzés:</span>
+          </br>
+            <textarea id="other" name="other"></textarea> <!-- kevesebbet lehessen írni -->
+          </div>
+          <input type="submit" value="Megrendelem">
+
+  </body>
+</html>
