@@ -27,3 +27,12 @@ header {
   margin: auto;
   padding: 70px 0;
 }
+
+.menuBar {
+  text-align: center;
+}
+
+.image {
+  text-align: center;
+  grid-row-gap: 2em;
+}
