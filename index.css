@@ -1,0 +1,23 @@
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 25% 25% 25% 25%;
+  background-color: #2196F3;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+}
+
+#shopName {
+  grid-column:1/4;
+
+}
+
+header {
+  
+  text-align: center;
+}
