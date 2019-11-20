@@ -14,10 +14,16 @@
 
 #shopName {
   grid-column:1/4;
-
 }
 
 header {
   
   text-align: center;
+}
+
+#logInForm {
+  font-size: 12pt;
+  display:block;
+  margin: auto;
+  padding: 70px 0;
 }
