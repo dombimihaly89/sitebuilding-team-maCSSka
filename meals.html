@@ -4,99 +4,175 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="meals.css" />
-    <title>VegaFutár</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme|Caveat|Indie+Flower|Nanum+Myeongjo|Pacifico&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Ételeink</h1>
-    <div>
-      <h2>Gombával töltött káposzta</h2>
-      <img
-        height="220px"
-        weight="230px"
-        src="images/toltottkaposzta.jpg"
-        alt="Gombával töltött káposzta"
-      />
-      <p>Ár: <span>1090 Ft</span></p>
-      <p>Összetevők:</p>
-      <ul>
-        <li>Gomba</li>
-        <li>Savanyított káposzta</li>
-        <li>Hajdina</li>
-        <li>Tejföl</li>
-      </ul>
-    </div>
-    <div>
-      <h2>Kölessel és lencsével töltött cukkini</h2>
-      <img
-      height="250px"
-      weight="250px"
-        src="images/toltott_cukkini.jpg"
-        alt="Kölessel és lencsével töltött cukkini"
-      />
-      <p>Ár:<span>1190 Ft</span></p>
-      <p>Összetevők:</p>
-      <ul>
-        <li>Cukkini</li>
-        <li>Köles</li>
-        <li>Lencse</li>
-        <li>Tojás</li>
-        <li>Tejföl</li>
-      </ul>
-    </div>
-    <div>
-      <h2>Paradicsomos kölesgombóc</h2>
-      <img
-        height="250px"
-        weight="250px"
-        src="images/bulgurgomboc-zoldfuszerekkel-recept-327.jpg"
-        alt="Paradicsomos kölesgombóc"
-      />
-      <p>Ár:<span>1090 Ft</span></p>
-      <p>Összetevők:</p>
-      <ul>
-        <li>Paradicsomszósz</li>
-        <li>Köles</li>
-        <li>Petrezselyem</li>
-        <li>Sajt</li>
-      </ul>
-    </div>
-    <div>
-      <h2>Vegetáriánus „vadas” karfiol steakkel és zsemlegombóccal</h2>
-      <img
-        height="230px"
-        weight="230px"
-        src="images/vega-vadas-1024x685_1.jpg"
-        alt="Karfiol steak"
-      />
-      <p>Ár:<span>1190 Ft</span></p>
-      <p>Összetevők:</p>
-      <ul>
-        <li>Karfiol</li>
-        <li>Rozskenyér</li>
-        <li>Petrezselyem</li>
-        <li>Tojás</li>
-        <li>Száraz fehérbor</li>
-      </ul>
-    </div>
-    <div>
-      <h2>Zöldséges enchillada</h2>
-      <img
-        height="240px"
-        weight="240px"
-        src="images/zoldseges-enchilada-recept-foto.jpg"
-        alt="Zöldséges enchillada"
-      />
-      <p>Ár:<span>990 Ft</span></p>
-      <p>Összetevők:</p>
-      <ul>
-        <li>Paprika</li>
-        <li>Paradicsom</li>
-        <li>Gomba</li>
-        <li>Kukorica</li>
-        <li>Cheddar sajt</li>
-        <li>Chilis paradicsomszósz</li>
-      </ul>
+    <div class="grid-container">
+      <div id="shopName">
+        <header>
+          <h1>Vega Futár</h1>
+        </header>
+      </div>
+      <div id="logIn">
+        <form id="logInForm" action="r">
+          <label for="userName">Felhasználónév: </label>
+          <br />
+          <input type="text" id="userName" />
+          <br />
+          <label for="password">Jelszó: </label>
+          <br />
+          <input type="password" id="password" />
+          <input type="submit"/ value="Bejelentkezés">
+        </form>
+      </div>
+      <div class="menuBar"><a href="index.html">Főoldal</a></div>
+      <div class="menuBar"><a href="meals.html">Étlap</a></div>
+      <div class="menuBar"><a href="order.html">Rendelés</a></div>
+      <div class="menuBar"><a href="contact.html">Kapcsolat</a></div>
+      <div class="image">
+        <img
+          src="https://avocadopesto.com/wp-content/uploads/2012/04/Raw-Vegan-Recipes-Collard-Wraps.jpg"
+          alt="Some Vegan Food"
+          height="300"
+          width="280"
+        />
+      </div>
+      <div class="image">
+        <img
+          src="https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2018/05/vegan-chilli.jpg"
+          alt="Some Vegan Food"
+          height="300"
+          width="280"
+        />
+      </div>
+      <div class="image">
+        <img
+          src="https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2019/07/vegan-summer-pasta-close-up-800x1200.jpg"
+          alt="Some Vegan Food"
+          height="300"
+          width="280"
+        />
+      </div>
+      <div class="image">
+        <img
+          src="https://mfacdn.cachefly.net/chooseveg/2018/02/Greek-Goddess-Bowl.jpg"
+          alt="Some Vegan Food"
+          height="300"
+          width="275"
+        />
+      </div>
+      <div class="fromOurRestaurant">
+        <h2>Menü</h2>
+      </div>
+      <div class="mealsOfRestaurant">
+        <div>
+          <h2>Gombával töltött káposzta</h2>
+          <img
+            height="220px"
+            weight="230px"
+            src="images/toltottkaposzta.jpg"
+            alt="Gombával töltött káposzta"
+          />
+          <p>Ár: <span> 1090 Ft</span></p>
+          <p>Összetevők:</p>
+          <ul>
+            <li>Gomba</li>
+            <li>Savanyított káposzta</li>
+            <li>Hajdina</li>
+            <li>Tejföl</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Kölessel és lencsével töltött cukkini</h2>
+          <img
+            height="250px"
+            weight="250px"
+            src="images/toltott_cukkini.jpg"
+            alt="Kölessel és lencsével töltött cukkini"
+          />
+          <p>Ár:<span> 1190 Ft</span></p>
+          <p>Összetevők:</p>
+          <ul>
+            <li>Cukkini</li>
+            <li>Köles</li>
+            <li>Lencse</li>
+            <li>Tojás</li>
+            <li>Tejföl</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Paradicsomos kölesgombóc</h2>
+          <img
+            height="250px"
+            weight="250px"
+            src="images/bulgurgomboc-zoldfuszerekkel-recept-327.jpg"
+            alt="Paradicsomos kölesgombóc"
+          />
+          <p>Ár:<span> 1090 Ft</span></p>
+          <p>Összetevők:</p>
+          <ul>
+            <li>Paradicsomszósz</li>
+            <li>Köles</li>
+            <li>Petrezselyem</li>
+            <li>Sajt</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Vegetáriánus „vadas” karfiol steakkel és zsemlegombóccal</h2>
+          <img
+            height="230px"
+            weight="230px"
+            src="images/vega-vadas-1024x685_1.jpg"
+            alt="Karfiol steak"
+          />
+          <p>Ár:<span> 1190 Ft</span></p>
+          <p>Összetevők:</p>
+          <ul>
+            <li>Karfiol</li>
+            <li>Rozskenyér</li>
+            <li>Petrezselyem</li>
+            <li>Tojás</li>
+            <li>Száraz fehérbor</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Zöldséges enchillada</h2>
+          <img
+            height="240px"
+            weight="240px"
+            src="images/zoldseges-enchilada-recept-foto.jpg"
+            alt="Zöldséges enchillada"
+          />
+          <p>Ár:<span> 990 Ft</span></p>
+          <p>Összetevők:</p>
+          <ul>
+            <li>Paprika</li>
+            <li>Paradicsom</li>
+            <li>Gomba</li>
+            <li>Kukorica</li>
+            <li>Cheddar sajt</li>
+            <li>Chilis paradicsomszósz</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer">
+        <footer>
+          <hr />
+          Nincs nálad készpénz? Semmi gond! Válaszd az online fizetést. A
+          vendégek igényeit maximálisan figyelembe véve a legtöbb étteremnél a
+          rendeléskor már online is lehet fizetni. A fizetéshez használhatsz
+          Visa, Mastercard és más típusú hitel- és bankkártyákat is. A SZÉP
+          kártya egyenlegének terhére is több 100 vendéglátóhely kínálatából
+          válogathatsz. Ha pedig ez még nem lenne eléggé XXI. századi, akkor a
+          mobilodat is használhatod pénztárcaként a Mastercard Mobile alkalmazás
+          segítségével.
+        </footer>
+      </div>
     </div>
   </body>
 </html>
