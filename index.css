@@ -58,7 +58,11 @@ header {
 .contentFromOurRestaurant {
   grid-column:1/5;
   font-size: 20%;
+}
 
+.orderingPart {
+  grid-column:1/5;
+  font-size: 10%;
 }
 
 #loginLabel {

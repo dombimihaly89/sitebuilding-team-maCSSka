@@ -18,19 +18,6 @@
 
 }
 
-h2 {
-  font-size: 110%;
-}
-
-label {
-  font-size: 14pt;
-
-}
-
-span {
-  font-size: 14pt;
-}
-
 header {
   padding: 70px 0;
   text-align: center;
@@ -66,9 +53,17 @@ header {
   text-align: center;
 }
 
+.ourContact {
+  grid-column:1/5;
+}
+
 .contentFromOurRestaurant {
   grid-column:1/5;
   font-size: 20%;
+}
+
+h2 {
+  font-size: 110%;
 }
 
 .orderingPart {
