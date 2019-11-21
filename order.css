@@ -1,0 +1,129 @@
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 25% 25% 25% 25%;
+  background-color: #2196f3;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.grid-container > div {
+  background-color: rgb(222, 250, 216);
+  font-size: 30px;
+}
+
+#shopName {
+  grid-column: 1/4;
+  font-family: "Pacifico", cursive;
+}
+
+h2 {
+  font-size: 110%;
+}
+
+label {
+  font-size: 14pt;
+}
+
+span {
+  font-size: 14pt;
+}
+
+header {
+  padding: 70px 0;
+  text-align: center;
+  font-style: italic;
+  font-family: "Acme", sans-serif;
+  text-decoration: underline overline dotted red;
+}
+
+#logInForm {
+  font-size: 12pt;
+  display: block;
+  margin: auto;
+  padding: 70px 0;
+  font-weight: bold;
+
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.menuBar {
+  text-align: center;
+}
+
+.image {
+  text-align: center;
+  grid-row-gap: 2em;
+}
+
+.fromOurRestaurant {
+  grid-column: 1/5;
+  text-align: center;
+}
+
+.contentFromOurRestaurant {
+  grid-column: 1/5;
+  font-size: 20%;
+}
+
+.orderingPart {
+  grid-column: 1/5;
+  font-size: 10%;
+}
+
+#loginLabel {
+  font-weight: bold;
+}
+
+p {
+  font-size: 14pt;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: "Pacifico", cursive;
+}
+
+.footer {
+  grid-column: 1/5;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+footer {
+  font-size: 16pt;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#wallpaper {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: chocolate;
+}
+
+a:hover {
+  color: purple;
+}
+
+a:active {
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url("images/index-wallpaper-opacity.png");
+}
