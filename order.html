@@ -25,8 +25,9 @@
           id="mushroomStuffedCabagesNumber"
           name="mushroomStuffedCabagesNumber"
         />
-        <label for="mushroomStuffedCabagesNumber">db</label>
-        <br /> <br />
+        <label for="mushroomStuffedCabagesNumber">adag</label>
+        <br />
+        <br />
         <label for="milletStuffedCourgette"
           >Kölessel és lencsével töltött cukkini</label
         >
@@ -42,8 +43,9 @@
           id="milletStuffedCourgetteNumber"
           name="milletStuffedCourgetteNumber"
         />
-        <label for="milletStuffedCourgetteNumber">db</label>
-        <br /> <br />
+        <label for="milletStuffedCourgetteNumber">adag</label>
+        <br />
+        <br />
         <label for="milletBalls">Paradicsomos kölesgombóc</label>
         <input type="checkbox" name="chooseMeal" id="milletBalls" value="yes" />
         <input
@@ -52,8 +54,9 @@
           id="milletBallsNumber"
           name="milletBallsNumber"
         />
-        <label for="milletBallsNumber">db</label>
-        <br /> <br />
+        <label for="milletBallsNumber">adag</label>
+        <br />
+        <br />
         <label for="cauliflowerSteak"
           >Vegetáriánus „vadas” karfiol steakkel és zsemlegombóccal</label
         >
@@ -69,8 +72,9 @@
           id="cauliflowerSteakNumber"
           name="cauliflowerSteakNumber"
         />
-        <label for="cauliflowerSteakNumber">db</label>
-        <br /> <br />
+        <label for="cauliflowerSteakNumber">adag</label>
+        <br />
+        <br />
         <label for="enchillada">Zöldséges enchillada</label>
         <input type="checkbox" name="chooseMeal" id="enchillada" value="yes" />
         <input
@@ -79,29 +83,41 @@
           id="enchilladaNumber"
           name="enchilladaNumber"
         />
-        <label for="enchilladaNumber">db</label>
+        <label for="enchilladaNumber">adag</label>
       </div>
       <br />
       <div>
         <h2>Megrendelői adatok:</h2>
         <label for="lastName">Vezetéknév:</label>
-        <input id="lastName" type="text" name="lastName" maxlength="30" required />
+        <input
+          id="lastName"
+          type="text"
+          name="lastName"
+          maxlength="30"
+          required
+        />
       </div>
       <br />
       <div>
         <label for="firstName">Keresztnév:</label>
-        <input id="firstName" type="text" name="firstName" maxlength="20" required />
+        <input
+          id="firstName"
+          type="text"
+          name="firstName"
+          maxlength="20"
+          required
+        />
       </div>
       <br />
       <div>
         <!-- csak számot lehessen -->
         <label for="phoneNumber">Telefonszám:</label>
-        <input id="phoneNumber" type="text" name="phoneNumber" required/>
+        <input id="phoneNumber" type="text" name="phoneNumber" required />
       </div>
       <br />
       <div>
         <label for="email">E-mail:</label>
-        <input id="email" type="text" name="email" maxlength="30" required/>
+        <input id="email" type="text" name="email" maxlength="30" required />
       </div>
       <br />
       <div>
@@ -145,7 +161,7 @@
       <br />
       <div>
         <span>Fizetési mód:</span>
-        <input type="radio" name="paymentMethod" id="cash" required/>
+        <input type="radio" name="paymentMethod" id="cash" required />
         <label for="cash">Készpénz</label>
         <input type="radio" name="paymentMethod" id="card" />
         <label for="card">Kártya</label>
@@ -157,14 +173,18 @@
         <span>Számlát kér:</span>
         <input type="checkbox" name="needBill" id="needBill" value="yes" />
         <label for="needBill">Igen</label>
-       
       </div>
       <br />
       <div>
         <span>Egyéb megjegyzés:</span>
         <br />
-        <textarea id="other" name="other"></textarea>
-        <!-- kevesebbet lehessen írni -->
+        <textarea
+          rows="4"
+          cols="50"
+          maxlength="200"
+          id="other"
+          name="other"
+        ></textarea>
       </div>
       <br />
       <input type="submit" value="Megrendelem" />
